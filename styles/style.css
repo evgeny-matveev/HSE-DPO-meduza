@@ -1,1 +1,48 @@
 @import "reset.css";
+
+/*
+  Псевдо-селекторы :before и :after, чтобы сделать полоску между элементами.
+ */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+  display: flex;
+
+  height: 45px;
+  padding: 0 15px;
+
+  text-transform: uppercase;
+
+  color: #fff;
+  background-color: rgb(38, 38, 38);
+
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: bold;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 21px;
+  margin-top: -4px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding: 5px 10px;
+
+  letter-spacing: 1px;
+}
+
+nav ul:last-of-type {
+  align-items: center;
+}
