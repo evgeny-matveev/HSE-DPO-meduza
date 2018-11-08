@@ -85,12 +85,26 @@ section {
   margin: 15px auto;
 
   border: 1px solid #999;
-  border-top: 3px solid #b88b58;
+  border-top: 4px solid #b88b58;
+  border-radius: 2px;
   background-color: #fff;
 }
 
 .card {
 
+}
+
+.news {
+  padding: 15px;
+
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  color: gray;
+
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .block:nth-child(1n) {
