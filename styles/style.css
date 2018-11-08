@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "fonts.css";
 
 /*
   Псевдо-селекторы :before и :after, чтобы сделать полоску между элементами.
@@ -20,9 +21,9 @@ nav {
   color: #fff;
   background-color: rgb(38, 38, 38);
 
-  font-family: Arial;
+  font-family: "Proxima Nova";
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 700;
 
   justify-content: space-between;
   align-items: center;
@@ -57,7 +58,7 @@ nav ul:last-of-type {
   border-bottom: 1px solid #999;
   background-color: #fff;
 
-  font-family: Arial;
+  font-family: "Proxima Nova";
   font-size: 13px;
   font-weight: bold;
 
@@ -97,7 +98,7 @@ section {
 }
 
 .block h3 {
-  font-family: Georgia;
+  font-family: "PF Regal";
   font-size: 19px;
 }
 
@@ -106,11 +107,12 @@ section {
 }
 
 .timestamp {
-  font-family: Arial;
+  font-family: "Proxima Nova";
   font-size: 12px;
 }
 
 .block.is-important h3 {
+  font-family: "Proxima Nova";
   font-weight: bold;
 }
 
