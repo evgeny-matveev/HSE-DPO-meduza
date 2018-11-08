@@ -84,7 +84,9 @@ section {
   width: 70vw;
   height: 400px;
   margin: 15px auto;
+}
 
+section.has-no-pics {
   border: 1px solid #999;
   border-top: 4px solid #b88b58;
   border-radius: 2px;
@@ -160,6 +162,19 @@ section {
   font-family: "Proxima Nova";
   font-weight: bold;
 }
+
+section.has-3-cards {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.card--1-of-3 {
+  width: 405px;
+}
+
+
+
 
 
 
