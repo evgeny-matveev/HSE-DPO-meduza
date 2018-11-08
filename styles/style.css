@@ -131,6 +131,13 @@ section.is-prominent {
   padding-bottom: 30px;
 }
 
+.card__content__item h3 {
+  font-family: "PF Regal";
+  font-size: 19px;
+
+  flex: 1;
+}
+
 .card__content__list {
   display: flex;
 
@@ -138,20 +145,13 @@ section.is-prominent {
 }
 
 .card__content__list .card__content__item {
-  width: 280px;
+  width: calc(100% / 2);
   height: 140px;
-  padding-right: 35px;
 }
 
 .card__content__list .card__content__item h3 {
   padding-top: 5px;
-}
-
-.card__content__item h3 {
-  font-family: "PF Regal";
-  font-size: 19px;
-
-  flex: 1;
+  padding-right: 25px;
 }
 
 .card__content > .card__content__item:first-of-type h3 {
