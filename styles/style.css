@@ -82,6 +82,7 @@ main {
 
 section {
   width: 80vw;
+  height: 400px;
   margin: 15px auto;
 
   border: 1px solid #999;
@@ -91,7 +92,9 @@ section {
 }
 
 .card {
+  display: flex;
 
+  flex-flow: row wrap;
 }
 
 .news {
@@ -107,13 +110,25 @@ section {
   font-weight: 600;
 }
 
-.block:nth-child(1n) {
+.block:nth-child(1),
+.card--right {
   width: 50%;
+}
+
+.block {
+}
+
+.card-right {
+  display: flex;
+
+  flex-flow: column wrap;
 }
 
 .block h3 {
   font-family: "PF Regal";
   font-size: 19px;
+
+  flex: 1;
 }
 
 .card .block:first-of-type h3 {
