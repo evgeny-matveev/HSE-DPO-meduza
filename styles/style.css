@@ -23,7 +23,7 @@ nav {
 
   font-family: "Proxima Nova";
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
 
   justify-content: space-between;
   align-items: center;
@@ -38,8 +38,12 @@ nav ul {
   display: flex;
 }
 
+nav ul:first-of-type {
+  padding-left: 150px;
+}
+
 nav ul li {
-  padding: 5px 10px;
+  padding: 5px 15px;
 
   letter-spacing: 1px;
 }
@@ -55,12 +59,12 @@ nav ul:last-of-type {
   padding: 0 15px;
 
   color: #000;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #ccc;
   background-color: #fff;
 
   font-family: "Proxima Nova";
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 600;
 
   justify-content: space-between;
   align-items: center;
@@ -75,25 +79,26 @@ nav ul:last-of-type {
 }
 
 main {
-  padding-top: 15px;
+  padding-top: 8px;
 
   background-color: #f2f2f2;
 }
 
 section {
-  width: 70vw;
+  min-width: 70vw;
+  max-width: 95vw;
   height: 400px;
-  margin: 15px auto;
+  margin: 8px auto;
 }
 
-section.has-no-pics {
-  border: 1px solid #999;
+section.is-prominent {
+  border: 1px solid #ccc;
   border-top: 4px solid #b88b58;
   border-radius: 2px;
   background-color: #fff;
 }
 
-.card {
+.card__content {
   display: flex;
 
   padding: 15px;
@@ -101,7 +106,7 @@ section.has-no-pics {
   flex-flow: row wrap;
 }
 
-.news {
+.card__header {
   padding: 15px;
 
   letter-spacing: 0.5px;
@@ -114,42 +119,42 @@ section.has-no-pics {
   font-weight: 600;
 }
 
-.block:nth-child(1),
-.card--right {
+.card__content__item:nth-child(1),
+.card__content__list {
   width: 50%;
 }
 
-.block {
+.card__content__item {
   display: flex;
   flex-direction: column;
 
   padding-bottom: 30px;
 }
 
-.card--right {
+.card__content__list {
   display: flex;
 
   flex-wrap: wrap;
 }
 
-.card--right .block {
+.card__content__list .card__content__item {
   width: 280px;
   height: 140px;
   padding-right: 35px;
 }
 
-.card--right .block h3 {
+.card__content__list .card__content__item h3 {
   padding-top: 5px;
 }
 
-.block h3 {
+.card__content__item h3 {
   font-family: "PF Regal";
   font-size: 19px;
 
   flex: 1;
 }
 
-.card > .block:first-of-type h3 {
+.card__content > .card__content__item:first-of-type h3 {
   font-size: 34px;
 }
 
@@ -158,7 +163,7 @@ section.has-no-pics {
   font-size: 12px;
 }
 
-.block.is-important h3 {
+.card__content__item.is-important h3 {
   font-family: "Proxima Nova";
   font-weight: bold;
 }
