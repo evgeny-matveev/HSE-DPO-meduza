@@ -81,7 +81,7 @@ main {
 }
 
 section {
-  width: 80vw;
+  width: 70vw;
   height: 400px;
   margin: 15px auto;
 
@@ -93,6 +93,8 @@ section {
 
 .card {
   display: flex;
+
+  padding: 15px;
 
   flex-flow: row wrap;
 }
@@ -116,12 +118,26 @@ section {
 }
 
 .block {
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 30px;
 }
 
-.card-right {
+.card--right {
   display: flex;
 
-  flex-flow: column wrap;
+  flex-wrap: wrap;
+}
+
+.card--right .block {
+  width: 280px;
+  height: 140px;
+  padding-right: 35px;
+}
+
+.card--right .block h3 {
+  padding-top: 5px;
 }
 
 .block h3 {
@@ -131,7 +147,7 @@ section {
   flex: 1;
 }
 
-.card .block:first-of-type h3 {
+.card > .block:first-of-type h3 {
   font-size: 34px;
 }
 
