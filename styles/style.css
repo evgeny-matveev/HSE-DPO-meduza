@@ -87,8 +87,7 @@ main {
 section {
   min-width: 70vw;
   max-width: 95vw;
-  height: 400px;
-  margin: 8px auto;
+  margin: 15px auto;
 }
 
 section.is-prominent {
@@ -103,7 +102,7 @@ section.is-prominent {
 
   padding: 15px;
 
-  flex-flow: row wrap;
+  flex-wrap: wrap;
 }
 
 .card__header {
@@ -145,8 +144,11 @@ section.is-prominent {
 }
 
 .card__content__list .card__content__item {
-  width: calc(100% / 2);
-  height: 140px;
+  display: flex;
+
+  width: 50%;
+
+  flex-flow: column nowrap;
 }
 
 .card__content__list .card__content__item h3 {
@@ -175,8 +177,47 @@ section.has-3-cards {
 }
 
 .card--1-of-3 {
-  width: 405px;
+  width: calc(100% / 3);
+  margin-right: 15px;
+
+  border: 1px solid #ccc;
+  background-color: #fff;
 }
+
+.card--1-of-3:last-of-type {
+  margin-right: 0;
+}
+
+.card--1-of-3 img {
+  width: 100%;
+}
+
+.card--1-of-3 .category,
+.card--1-of-3 h3,
+.card--1-of-3 .timestamp {
+  padding: 10px;
+}
+
+.card--1-of-3 .category {
+  display: inline-block;
+
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 0 5px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #b88b58;
+  border: 1px solid #b88b58;
+  border-radius: 2px;
+
+  font-family: "Proxima Nova";
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 14px;
+}
+
 
 
 
